@@ -16,25 +16,26 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top pt-2 Dark">
-      <div class="container-fluid">
-          
+      <div class="container-fluid flex-nowrap">
+              
           <a class="navbar-brand" href="#"><img src= "./media/logo.png" height="40px"></img></a>
-          
-      <form role="search">
-          <input class="form-control" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">
-      </form>
-      
-      <button class="Toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#col" aria-controls="col" aria-expanded="false" aria-label="Toggle navigation">
-          <span class=" navbar-toggler-icon"></span>
-      </button>
+              
+          <form role="search">
+                  <input class="form-control" type="search" placeholder="Wyszukaj">
+          </form>
+          <button class="Toggler navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#col" aria-controls="col" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+      </div>
       
       <div class="collapse navbar-collapse" id ="col">
           <ul class="navbar-nav me-auto mb-2 mb-sm-0 text-center fw-bold">
               <li class="nav-item">
-                  <a class="nav-link" href="./index.html">Home</a>
+                  <a class="nav-link Active" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link Active" href="./about.html">O nas</a>
+                  <a class="nav-link" href="./about.html">O nas</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="./history.html">Historia</a>
@@ -48,7 +49,7 @@
               <button type="button" class="btn btn-dark">Zarejestruj się</button>
           </div>
       </div>
-  </nav>
+    </nav>
 
   <div class="Background bg-image p-5 text-center text-black">
     <h1 class="mb-3 h2 fs-1 fw-bold">O projekcie Magic Page</h1>
