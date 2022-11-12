@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Strona kontaktowa projektu 'Magic Page'">
+    <meta name="keywords" content="magic page, magic product, magic contact">
+  	<meta name="author" content="Jakub Siwy">
+    <title>Magic Page - Kontakt</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./scripts/contact.js"></script>
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top pt-2 Dark">
+      <div class="container-fluid">
+          
+          <a class="navbar-brand" href="#"><img src= "./media/logo.png" height="40px"></img></a>
+          
+      <form role="search">
+          <input class="form-control" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">
+      </form>
+      
+      <button class="Toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#col" aria-controls="col" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=" navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id ="col">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0 text-center fw-bold">
+              <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./about.html">O nas</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./history.html">Historia</a>
+              </li>
+              <li class="nav-item mb-2">
+                  <a class="nav-link Active" href="./contact.html">Kontakt</a>
+              </li>
+          </ul>
+          <div class="text-center">
+              <button type="button" class="btn btn-light text-dark me-2">Zaloguj się</button>
+              <button type="button" class="btn btn-dark">Zarejestruj się</button>
+          </div>
+      </div>
+  </nav>
+
+  <div class="Background bg-image p-5 text-center text-black">
+    <h1 class="mb-3 h2 fs-1 fw-bold">Kontakt z Magic Page</h1>
+    <p class = "fs-4 px-5 py-3 mb-2 text-center fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
+  </div>
+
+  <div class="Light">
+        <div class="container pt-5 pb-4">
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title fs-2">Kontakt telefoniczny</h5>
+                <p class="card-text fs-3">Numery telefonów do różnych działów naszej firmy</p>
+              </div>
+              <ul class="list-group list-group-flush fw-bold fs-5">
+                <li class="list-group-item">Infolinia: <a class="Con" href = "+48478384734">478 384 734</a></li>
+                <li class="list-group-item">Dział obsługi klienta: <a class="Con" href = "+48123456789">123 456 789</a></li>
+                <li class="list-group-item">Dział techniczny: <a class="Con" href = "+48987654321">987 654 321</a></li>
+                <li class="list-group-item">Dział marketingu: <a class="Con" href = "+48918273645">918 273 645</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+            
+        <div class="container py-4">
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title fs-2">Kontakt internetowy</h5>
+                <p class="card-text fs-3">Możliwy poprzez formularz. Większe zapytania prosimy kierować na jeden z podanych niżej adresów e-mail:</p>
+              </div>
+              <ul class="list-group list-group-flush fw-bold fs-5">
+                <li class="list-group-item">Skargi i reklamacje: <a class="Con" href = "mailto: exaple@example.com">reklamacje@magic.com</a></li>
+                <li class="list-group-item">Zapytania biznesowe: <a class="Con" href = "mailto: exaple@example.com">marketing@magic.com</a></li>
+                <li class="list-group-item">Pomysły na usprawnienia: <a class="Con" href = "mailto: example@example.com">pomysly@magic.com</a></li>
+                <li class="list-group-item">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ConForm">
+                    Formularz Kontaktowy
+                  </button>
+                </li>
+              </ul>
+
+              <div class="modal fade" id="ConForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Formularz Kontaktowy</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+
+                      <form class="row g-2 needs-validation" novalidate>
+                        <div class="col-6">
+                          <label for="validationCustom01" class="form-label">Imię</label>
+                          <input type="text" class="form-control" id="validationCustom01" placeholder="Jan" required>
+                          <div class="valid-feedback">
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <label for="validationCustom02" class="form-label">Nazwisko</label>
+                          <input type="text" class="form-control" id="validationCustom02"placeholder="Kowalski" required>
+                          <div class="valid-feedback">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <label for="validationCustomUsername" class="form-label">Adres E-mail</label>
+                          <div class="input-group has-validation">
+                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="jan.kowalski" required>
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="example.com" pattern="[a-z0-9.-]+\.[a-z]{2,4}" required>
+                            <div class="invalid-feedback">
+                              Nieprawidłowy format danych!
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-12">
+                          <label for="validationTextarea" class="form-label">Wiadomość</label>
+                          <textarea class="form-control" id="validationTextarea" placeholder="Wiadomość..." minlength="200" required></textarea>
+                          <div class="invalid-feedback">
+                            Wiadomość powinna mieć co najmniej 200 znaków
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Wyślij</button>
+                      </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+
+            </div>
+          </div>
+        </div>    
+        
+        <div class="container pt-5 pb-4">
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title fs-2">Odzwiedź nas w siedzibie</h5>
+                <p class="card-text fs-3">Magic Page sp. z o.o. <br>
+                ul. Bagno 3,  00-112 Warszawa</p>
+              </div>
+              <ul class="list-group list-group-flush fw-bold fs-5">
+                <li class="list-group-item">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.437426393008!2d21.00402515172722!3d52.235437979662045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8bb492366b%3A0x4f003bc92a76f2b6!2sBagno%203%2C%2000-112%20Warszawa!5e0!3m2!1spl!2spl!4v1668272410915!5m2!1spl!2spl" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                </div>
+
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="container pt-4 pb-5">
+          <div class="col">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title fs-2">FAQ</h5>
+                <p class="card-text fs-3">Lista najczęściej zadawanych pytań wraz z odpowiedziami</p>
+              </div>
+              <ul class="list-group list-group-flush fw-bold fs-5">
+                  <li class="list-group-item">
+                    <p>1. Jak zakupić usługę na stronie?</p>
+                    <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#FAQ1" aria-expanded="false">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    </button>
+                    <p class = "collapse fw-normal p-3 bg-info bg-opacity-10 border border-info rounded-end" id="FAQ1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem  interdum condimentum.</p></li>
+                <li class="list-group-item">
+                  <p>2. Dlaczego nie mogę się zalogować?</p>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ2" aria-expanded="false">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    </button>
+                    <p class = "collapse fw-normal p-3 bg-info bg-opacity-10 border border-info rounded-end" id="FAQ2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem  interdum condimentum.</p>
+                </li>
+                <li class="list-group-item">
+                  <p>3. Czy można u Państwa zamówić dodatkowe usługi?</p>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ3" aria-expanded="false" aria-controls="collapseExample">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    </button>
+                    <p class = "collapse fw-normal p-3 bg-info bg-opacity-10 border border-info rounded-end" id="FAQ3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem  interdum condimentum.</p>
+                </li>
+                <li class="list-group-item">
+                  <p>4. Czy istnieją jakiekolwiek zniżki?</p>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#FAQ4" aria-expanded="false" aria-controls="collapseExample">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    </button>
+                    <p class = "collapse fw-normal p-3 bg-info bg-opacity-10 border border-info rounded-end" id="FAQ4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem  interdum condimentum.</p>
+                </li>
+              </ul>
+            
+            </div>
+          </div>
+        </div>
+  </div>
+
+
+
+    <footer class="Footer text-center align-items-center py-3 text-white">
+        <p class="fw-bold">Magic Page Sp. z o.o. 2022</p>
+    </footer>
+
+
+    
+  </body>
+</html>

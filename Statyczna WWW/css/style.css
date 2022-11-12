@@ -1,0 +1,87 @@
+
+.Background {
+  background-image: linear-gradient(rgba(255,255,255,0.55), rgba(255, 255, 255, 0.55)), url('https://i.picsum.photos/id/249/3000/2000.jpg?hmac=U2oOCXdXUwt6ftKMC4icF6eS8dGDUZJM_0-qi0JEqjk');
+  background-position-y: center;
+}
+
+.Photo{
+  max-height: 250px;
+}
+
+.Light .Con, .Con:visited, .Con:active, .Con:hover{
+  color: #e8491d;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #e8491d !important;
+  border-color: #e8491d !important;
+}
+
+.Footer {
+  margin: 0;
+  background-color: #e8491d;
+}
+
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+.container{
+  width:80%;
+}
+
+.Dark{
+  background:#35424a;
+}
+
+.navbar{
+  background:#ac3818;
+}
+
+.navbar .Toggler{
+  background:#ffffff59;
+}
+
+.Dark a , .Dark h1, 
+.Dark h2, .Dark h3, 
+.Dark h4, .Dark h5, 
+.Dark h6, .Dark p {
+  color:#ffffff;
+}
+
+.Dark .Active {
+  color:#000000;
+}
+
+.list-group-item{
+  background-color: #b0b5b883 !important;
+}
+
+.card-body {
+  background-color: #e8491dc5 !important;
+}
+
+.Light a , .Light h1, 
+.Light h2, .Light h3, 
+.Light h4, .Light h5, 
+.Light h6, .Light p {
+  color:#000000;
+}
+
+
+/* Newsletter */
+
+.Newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a;
+}
+
+.Newsletter .Button{
+  border-color: #e8491d;
+  background:#e8491d;
+}
