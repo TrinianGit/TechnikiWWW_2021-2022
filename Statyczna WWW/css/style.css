@@ -40,6 +40,11 @@ body{
 
 .navbar{
   background:#ac3818;
+  white-space: nowrap;
+}
+
+.Wrapper{
+  max-width: 350px;
 }
 
 .navbar .Toggler{
