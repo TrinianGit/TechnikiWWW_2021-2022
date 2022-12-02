@@ -7,26 +7,26 @@
     <meta name="author" content="Jakub Siwy">
     <title>Magic Page - O nas</title>
     <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     
+    <script type="text/javascript" src="./scripts/contact.js"></script>
     <link rel="icon" href="./media/icon.png">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top pt-2 Dark">
-      <div class="Wrapper container-fluid flex-nowrap flex-lg-wrap justify-content-evenly">
+      <div class="container-fluid">
           
-          <a class="navbar-brand me-2 me-lg-0" href="./index.html"><img src= "./media/logo.png" height="40px"></img></a>
+          <a class="navbar-brand" href="#"><img src= "./media/logo.png" height="40px"></img></a>
           
-          <form role="search ms-lg-0">
-              <input class="form-control" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">
-          </form>
-          <button class="Toggler navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#col" aria-controls="col" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-      </div>
+      <form role="search">
+          <input class="form-control" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">
+      </form>
+      
+      <button class="Toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#col" aria-controls="col" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=" navbar-toggler-icon"></span>
+      </button>
       
       <div class="collapse navbar-collapse" id ="col">
           <ul class="navbar-nav me-auto mb-2 mb-sm-0 text-center fw-bold">
@@ -44,11 +44,99 @@
               </li>
           </ul>
           <div class="text-center">
-              <button type="button" class="btn btn-light text-dark me-2">Zaloguj się</button>
-              <button type="button" class="btn btn-dark">Zarejestruj się</button>
-          </div>
+            <button type="button" class="btn btn-light text-dark me-2" data-bs-toggle="modal" data-bs-target="#LoginForm">Zaloguj się</button>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#RegisterForm">Zarejestruj się</button>
+        </div>
+
+        
+    </div>
+</nav>
+    
+<div class="modal fade" id="LoginForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+
+
+            <form class="needs-validation" novalidate>
+                <img class="mb-4" src="./media/logo.png" alt="" width="72" height="57">
+                <h1 class="h3 mb-3 fw-normal">Zaloguj się</h1>
+            
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="Nazwa użytkownika" required>
+                  <label for="floatingInput">Nazwa użytkownika</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Hasło" required>
+                  <label for="floatingPassword">Hasło</label>
+                </div>
+            
+                <div class="checkbox mb-3">
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Zaloguj się</button>
+                <button type="button" class="mt-4 w-100 btn btn-lg btn-dark" data-bs-target="#RegisterForm" data-bs-toggle="modal">Zarejestruj się</button>
+              </form>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+          
+        </div>
       </div>
-  </nav>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="RegisterForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <form class="needs-validation" novalidate>
+                <img class="mb-4" src="./media/logo.png" alt="" width="72" height="57">
+                <h1 class="h3 mb-3 fw-normal">Zarejestruj się</h1>
+            
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="Nazwa użytkownika" required>
+                  <label for="floatingInput">Nazwa użytkownika</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="jan.kowalski@email.com" required>
+                    <label for="floatingInput">E-mail</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Hasło" required>
+                  <label for="floatingPassword">Hasło</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Powtórz hasło" required>
+                    <label for="floatingPassword">Powtórz hasło</label>
+                </div>
+            
+                <div class="checkbox mb-3">
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Zarejestruj się</button>
+                <button type="button" class="mt-4 w-100 btn btn-lg btn-dark" data-bs-target="#LoginForm" data-bs-toggle="modal">Zaloguj się</button>
+              </form>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="Background bg-image p-5 text-center text-black">
     <h1 class="mb-3 h2 fs-1 fw-bold">O projekcie Magic Page</h1>
